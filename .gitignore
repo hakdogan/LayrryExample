@@ -1,0 +1,10 @@
+.idea/
+.vertx
+*.iml
+*.war
+*.jar
+*.log
+target/
+log/
+mods/
+mylib/
