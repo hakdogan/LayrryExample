@@ -5,24 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kodcu</groupId>
-    <artifactId>larry-example</artifactId>
+    <artifactId>layrry-example</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>first</module>
-        <module>second</module>
-        <module>third</module>
-        <module>runner</module>
+        <module>com.kodcu.app</module>
+        <module>com.kodcu.bar</module>
+        <module>com.kodcu.foo</module>
+        <module>greeterolder</module>
+        <module>greeterrecent</module>
+        <module>layrryrunner</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.moditect.layrry</groupId>
-            <artifactId>layrry-launcher</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
@@ -34,31 +28,6 @@
                     <source>1.9</source>
                     <target>1.9</target>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.2</version>
-                <executions>
-                    <execution>
-                        <id>copy</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>org.moditect.layrry</groupId>
-                                    <artifactId>layrry-launcher</artifactId>
-                                    <version>1.0-SNAPSHOT</version>
-                                    <outputDirectory>../mylib</outputDirectory>
-                                </artifactItem>
-                            </artifactItems>
-                            <!-- other configurations here -->
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

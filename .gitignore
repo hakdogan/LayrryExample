@@ -1,5 +1,4 @@
 .idea/
-.vertx
 *.iml
 *.war
 *.jar
@@ -7,4 +6,4 @@
 target/
 log/
 mods/
-mylib/
+modularjar/
